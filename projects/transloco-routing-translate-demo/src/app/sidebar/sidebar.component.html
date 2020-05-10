@@ -1,0 +1,12 @@
+<div>
+  <h4>Set language</h4>
+  <ul>
+    <ng-container *ngFor="let lang of availableLangs">
+      <li>
+        <button class="lang-btn" type="button" (click)="setLang(lang || lang.id)">
+          {{lang || lang.id}}
+        </button>
+      </li>
+    </ng-container>
+  </ul>
+</div>
